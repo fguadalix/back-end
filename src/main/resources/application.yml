@@ -1,0 +1,35 @@
+spring:
+    jpa:
+        database: POSTGRESQL
+        show-sql: true
+        hibernate.ddl-auto: none
+        properties:
+          hibernate:
+            temp:
+              use_jdbc_metadata_defaults: false
+    datasource:
+        platform: postgres
+        url: jdbc:postgresql://172.26.2.140:5555/postgres
+        username: postgres
+        password: 1234    
+        driverClassName: org.postgresql.Driver
+## MULTIPART (MultipartProperties)
+# Enable multipart uploads
+    servlet:
+      multipart:
+        enabled: true
+# Threshold after which files are written to disk.
+        file-size-threshold: 2KB
+# Max file size.
+        max-file-size: 20MB
+# Max Request Size
+        max-request-size: 20MB    
+server:
+    port: 5000
+
+schema: monolito_god    
+
+ad:
+  url: ldap://srvdc2mad.axpenet.local:389/
+  domain: axpenet.local
+        

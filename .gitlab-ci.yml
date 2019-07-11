@@ -1,0 +1,29 @@
+image: docker:stable
+services:
+  - docker:dind
+
+before_script:
+  - docker info
+
+stages:
+  - build
+  - deploy
+
+build:
+  image: maven:3-jdk-8
+  stage: build
+  script: "mvn package"
+  artifacts:
+    paths:
+      - target/*.jar
+
+deploy:
+  only:
+    - develop
+  stage: deploy
+  script:
+    - docker stop od_back || true
+    - docker rm od_back || true
+    - docker rmi od_back || true
+    - docker build -t od_back .
+    - docker run --name od_back -d -p 5000:5000 od_back

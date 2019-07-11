@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="odrevolution">
+		<class>com.axpe.od.dao.CatActividadNegocio</class>
+		<class>com.axpe.od.dao.CatAmbfuncional</class>
+		<class>com.axpe.od.dao.CatCategoria</class>
+		<class>com.axpe.od.dao.CatCertificacione</class>
+		<class>com.axpe.od.dao.CatConceptosParte</class>
+		<class>com.axpe.od.dao.CatDelegacione</class>
+		<class>com.axpe.od.dao.CatDiasfestivo</class>
+		<class>com.axpe.od.dao.CatDiasfestivosDelegacion</class>
+		<class>com.axpe.od.dao.CatEmprColab</class>
+		<class>com.axpe.od.dao.CatEmprGrupo</class>
+		<class>com.axpe.od.dao.CatEstOport</class>
+		<class>com.axpe.od.dao.CatEstadoAlerta</class>
+		<class>com.axpe.od.dao.CatEstadoCivil</class>
+		<class>com.axpe.od.dao.CatEstadoContacto</class>
+		<class>com.axpe.od.dao.CatEstadoOferta</class>
+		<class>com.axpe.od.dao.CatEstadoProy</class>
+		<class>com.axpe.od.dao.CatEvalNivel</class>
+		<class>com.axpe.od.dao.CatFormaPago</class>
+		<class>com.axpe.od.dao.CatFuenteOportunidad</class>
+		<class>com.axpe.od.dao.CatGrpTipoGasto</class>
+		<class>com.axpe.od.dao.CatHerramienta</class>
+		<class>com.axpe.od.dao.CatIdioma</class>
+		<class>com.axpe.od.dao.CatMotivoEntrevista</class>
+		<class>com.axpe.od.dao.CatOrigenEntrevista</class>
+		<class>com.axpe.od.dao.CatPais</class>
+<!-- 		<class>com.axpe.od.dao.CatEstadoPeti</class> -->
+<!-- 		<class>com.axpe.od.dao.CatEstadoRecruiting</class> -->
+<!-- 		<class>com.axpe.od.dao.CatMotivoCancelado</class> -->
+<!-- 		<class>com.axpe.od.dao.CatMotivoNofit</class> -->
+<!-- 		<class>com.axpe.od.dao.CatOrigenCandidato</class> -->
+		<class>com.axpe.od.dao.CatPerTiempo</class>
+		<class>com.axpe.od.dao.CatPeriodosEvaluacion</class>
+		<class>com.axpe.od.dao.CatPlataforma</class>
+		<class>com.axpe.od.dao.CatPrioridad</class>
+		<class>com.axpe.od.dao.CatProvincia</class>
+		<class>com.axpe.od.dao.CatSectorNegocio</class>
+		<class>com.axpe.od.dao.CatSituPeticion</class>
+		<class>com.axpe.od.dao.CatSituProfesional</class>
+		<class>com.axpe.od.dao.CatTResponsable</class>
+		<class>com.axpe.od.dao.CatTag</class>
+		<class>com.axpe.od.dao.CatTarifa</class>
+		<class>com.axpe.od.dao.CatTecnologia</class>
+		<class>com.axpe.od.dao.CatTipoAusencia</class>
+		<class>com.axpe.od.dao.CatTipoBonus</class>
+		<class>com.axpe.od.dao.CatTipoCertificacion</class>
+		<class>com.axpe.od.dao.CatTipoContacto</class>
+		<class>com.axpe.od.dao.CatTipoContrato</class>
+		<class>com.axpe.od.dao.CatTipoContratoNew</class>
+		<class>com.axpe.od.dao.CatTipoDocumento</class>
+		<class>com.axpe.od.dao.CatTipoEmple</class>
+		<class>com.axpe.od.dao.CatTipoFactura</class>
+		<class>com.axpe.od.dao.CatTipoFormacion</class>
+		<class>com.axpe.od.dao.CatTipoGasto</class>
+		<class>com.axpe.od.dao.CatTipoGerente</class>
+		<class>com.axpe.od.dao.CatTipoHerramienta</class>
+<!-- 		<class>com.axpe.od.dao.CatTipoPago</class> -->
+		<class>com.axpe.od.dao.CatTipoProyecto</class>
+		<class>com.axpe.od.dao.CatTipoServicio</class>
+		<class>com.axpe.od.dao.CatTipoTitulacion</class>
+		<class>com.axpe.od.dao.CatTitulacione</class>
+		<class>com.axpe.od.dao.CatUnidadNegocio</class>
+		<class>com.axpe.od.dao.CatUniversidadCf</class>
+		<class>com.axpe.od.dao.CatValoracion</class>
+		<class>com.axpe.od.dao.CatTipoAmbfuncional</class>
+		<class>com.axpe.od.dao.GodAlerta</class>
+<!-- 		<class>com.axpe.od.dao.GodBloqueo</class> -->
+<!-- 		<class>com.axpe.od.dao.GodCertificacionesProf</class> -->
+<!-- 		<class>com.axpe.od.dao.GodConfig</class> -->
+		<class>com.axpe.od.dao.GodDisponibilidad</class>
+		<class>com.axpe.od.dao.GodEntrevistadore</class>
+		<class>com.axpe.od.dao.GodEntrevistadorePK</class>
+<!-- 		<class>com.axpe.od.dao.GodEnvioCorreoProf</class> -->
+		<class>com.axpe.od.dao.GodHContacto</class>
+		<class>com.axpe.od.dao.GodIdioma</class>
+		<class>com.axpe.od.dao.GodIdiomasPet</class>
+		<class>com.axpe.od.dao.GodIdiomasProf</class>
+		<class>com.axpe.od.dao.GodNivelConocHerram</class>
+		<class>com.axpe.od.dao.GodPetiCandidato</class>
+		<class>com.axpe.od.dao.GodPetiCandidatoPK</class>
+		<class>com.axpe.od.dao.GodPetiTecnico</class>
+		<class>com.axpe.od.dao.GodPetiTecnicoPK</class>
+		<class>com.axpe.od.dao.GodPetiTitulacione</class>
+		<class>com.axpe.od.dao.GodPeticionHerram</class>
+		<class>com.axpe.od.dao.GodPeticionHerramPK</class>
+		<class>com.axpe.od.dao.GodProfExp</class>
+		<class>com.axpe.od.dao.GodProfTitulacione</class>
+		<class>com.axpe.od.dao.GodProfesHerram</class>
+		<class>com.axpe.od.dao.GodProfesHerramPK</class>
+		<class>com.axpe.od.dao.GodProfesionale</class>
+<!-- 		<class>com.axpe.od.dao.GodProfesionalesCorreosTemp</class> -->
+		<class>com.axpe.od.dao.GodProfesionalesInfojob</class>
+		<class>com.axpe.od.dao.GodSituacionLaboral</class>
+		<class>com.axpe.od.dao.GodTipoPerfil</class>
+		<class>com.axpe.od.dao.GodTipoReqHerram</class>
+<!-- 		<class>com.axpe.od.dao.GodTmp2</class> -->
+		<class>com.axpe.od.dao.GodTraduccione</class>
+		<class>com.axpe.od.dao.GodTraduccionePK</class>
+		<class>com.axpe.od.dao.GodTrazaEstadoPet</class>
+<!-- 		<class>com.axpe.od.dao.GodUsuario</class> -->
+		<class>com.axpe.od.dao.GodUsuariosRole</class>
+		<class>com.axpe.od.dao.LogLoginSgod</class>
+		<class>com.axpe.od.dao.GodAdjunto</class>
+	</persistence-unit>
+</persistence>
